@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wk9-O3-oLe" customClass="UScreenCenterCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speak0" translatesAutoresizingMaskIntoConstraints="NO" id="T7m-Rk-iT6">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="163"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Yms-lr-uSz"/>
+            <constraints>
+                <constraint firstItem="T7m-Rk-iT6" firstAttribute="leading" secondItem="Wk9-O3-oLe" secondAttribute="leading" id="RpR-r0-Noe"/>
+                <constraint firstAttribute="bottom" secondItem="T7m-Rk-iT6" secondAttribute="bottom" id="703-lr-qR1"/>
+                <constraint firstAttribute="trailing" secondItem="T7m-Rk-iT6" secondAttribute="trailing" id="Ikv-mg-Xnq"/>
+                <constraint firstItem="T7m-Rk-iT6" firstAttribute="top" secondItem="Wk9-O3-oLe" secondAttribute="top" id="eIt-vC-QJI"/>
+            </constraints>
+            <size key="customSize" width="150" height="163"/>
+            <connections>
+                <outlet property="sepakImage" destination="T7m-Rk-iT6" id="WKv-1z-wKh"/>
+            </connections>
+            <point key="canvasLocation" x="207.69230769230768" y="28.080568720379144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="speak0" width="94" height="95"/>
+    </resources>
+</document>

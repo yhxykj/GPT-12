@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="IXM-ba-cBW" customClass="OJImageCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IXM-ba-cBW" id="vx6-e9-PLI">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmL-Lk-215">
+                        <rect key="frame" x="16" y="6" width="358" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginimageMine" translatesAutoresizingMaskIntoConstraints="NO" id="EQ6-ST-kfN">
+                                <rect key="frame" x="0.0" y="0.0" width="358" height="57"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginbgDetails" translatesAutoresizingMaskIntoConstraints="NO" id="UW0-C2-TZm">
+                                <rect key="frame" x="25" y="18" width="21" height="21"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-NI-heQ">
+                                <rect key="frame" x="58" y="18" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioMain" translatesAutoresizingMaskIntoConstraints="NO" id="2GV-a0-N9J">
+                                <rect key="frame" x="334" y="23" width="7" height="11"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-X9-0iM">
+                                <rect key="frame" x="172" y="19" width="142" height="19.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141.98" id="uSH-SR-lC9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EQ6-ST-kfN" secondAttribute="trailing" id="pFV-eI-h2h"/>
+                            <constraint firstItem="UW0-C2-TZm" firstAttribute="leading" secondItem="RmL-Lk-215" secondAttribute="leading" constant="25.01" id="lPc-7s-abv"/>
+                            <constraint firstAttribute="trailing" secondItem="2GV-a0-N9J" secondAttribute="trailing" constant="16.98" id="KgU-Gk-Qrd"/>
+                            <constraint firstItem="UW0-C2-TZm" firstAttribute="centerY" secondItem="RmL-Lk-215" secondAttribute="centerY" id="hJw-K6-bho"/>
+                            <constraint firstItem="XLI-NI-heQ" firstAttribute="leading" secondItem="UW0-C2-TZm" secondAttribute="trailing" constant="12.01" id="WpM-Un-hw6"/>
+                            <constraint firstItem="EQ6-ST-kfN" firstAttribute="leading" secondItem="RmL-Lk-215" secondAttribute="leading" id="ss8-X4-NRY"/>
+                            <constraint firstItem="EQ6-ST-kfN" firstAttribute="top" secondItem="RmL-Lk-215" secondAttribute="top" id="XLf-jF-nua"/>
+                            <constraint firstAttribute="trailing" secondItem="nLW-X9-0iM" secondAttribute="trailing" constant="43.99" id="scQ-8v-cvQ"/>
+                            <constraint firstItem="XLI-NI-heQ" firstAttribute="centerY" secondItem="RmL-Lk-215" secondAttribute="centerY" id="t63-Uj-ezd"/>
+                            <constraint firstAttribute="bottom" secondItem="EQ6-ST-kfN" secondAttribute="bottom" id="eOe-SP-kaW"/>
+                            <constraint firstItem="nLW-X9-0iM" firstAttribute="centerY" secondItem="RmL-Lk-215" secondAttribute="centerY" id="4n6-Ha-cn2"/>
+                            <constraint firstItem="2GV-a0-N9J" firstAttribute="centerY" secondItem="RmL-Lk-215" secondAttribute="centerY" id="Ojx-Su-si1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RmL-Lk-215" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="6.01" id="8Hj-nv-gH1"/>
+                    <constraint firstItem="RmL-Lk-215" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="16.04" id="5yu-3j-1lM"/>
+                    <constraint firstAttribute="trailing" secondItem="RmL-Lk-215" secondAttribute="trailing" constant="16.03" id="SnU-TH-qkT"/>
+                    <constraint firstAttribute="bottom" secondItem="RmL-Lk-215" secondAttribute="bottom" constant="5.98" id="pnF-J3-DSj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="cxg-w2-Btf"/>
+            <connections>
+                <outlet property="accountlabel" destination="nLW-X9-0iM" id="35n-uF-AYD"/>
+                <outlet property="logoImage" destination="UW0-C2-TZm" id="oHE-3x-hEt"/>
+                <outlet property="namelabel" destination="XLI-NI-heQ" id="4oK-ON-j2O"/>
+                <outlet property="rImage" destination="2GV-a0-N9J" id="qGk-cy-Y9J"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-7.394366197183099"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="loginbgDetails" width="21" height="21"/>
+        <image name="loginimageMine" width="358" height="57"/>
+        <image name="audioMain" width="7" height="11"/>
+    </resources>
+</document>

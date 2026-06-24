@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="IXM-ba-cBW" customClass="ABTableMineCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IXM-ba-cBW" id="vx6-e9-PLI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajn-nr-STV">
+                        <rect key="frame" x="56" y="12" width="42" height="176"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-8x-nH3">
+                        <rect key="frame" x="77" y="32" width="0.0" height="136"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoAvatar.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gH2-QI-hGd" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="50" y="12" width="55" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55.03" id="dv3-Bf-fHW"/>
+                            <constraint firstAttribute="height" constant="30.01" id="x6n-l7-WZM"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5M-4M-i0O">
+                        <rect key="frame" x="38" y="75.666666666666671" width="204" height="49"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sureAssitantbg" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-VU-lbV">
+                                <rect key="frame" x="0.0" y="0.0" width="204" height="49"/>
+                            </imageView>
+                            <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WJ-LR-YRL">
+                                <rect key="frame" x="12" y="0.0" width="45" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45.02" id="tGQ-ov-1ip"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ringPhone"/>
+                                <connections>
+                                    <action selector="itemsClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="7dA-m3-uWo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vw-ZN-zLW">
+                                <rect key="frame" x="57" y="0.0" width="45" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45.01" id="meg-fh-6Fv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="shouRelationAudio"/>
+                                <connections>
+                                    <action selector="itemsClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="rZS-lI-yFm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="503" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG4-ZK-QLT">
+                                <rect key="frame" x="102" y="0.0" width="45" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45.01" id="KXR-50-oq4"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ringFiveCollection"/>
+                                <connections>
+                                    <action selector="itemsClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="Or8-A5-62N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="504" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-aO-HjN">
+                                <rect key="frame" x="147" y="0.0" width="45" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45.02" id="cpb-3F-cWo"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="photoManagerHeader"/>
+                                <connections>
+                                    <action selector="itemsClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="C3M-ge-sG8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204.01" id="jLP-Hp-Cju"/>
+                            <constraint firstItem="PG4-ZK-QLT" firstAttribute="top" secondItem="u5M-4M-i0O" secondAttribute="top" id="t0F-K8-uZR"/>
+                            <constraint firstItem="8WJ-LR-YRL" firstAttribute="top" secondItem="u5M-4M-i0O" secondAttribute="top" id="sqd-Iq-XOQ"/>
+                            <constraint firstItem="8WJ-LR-YRL" firstAttribute="leading" secondItem="u5M-4M-i0O" secondAttribute="leading" constant="12.04" id="AAC-zb-lLX"/>
+                            <constraint firstAttribute="trailing" secondItem="Uca-VU-lbV" secondAttribute="trailing" id="jAQ-oQ-v3q"/>
+                            <constraint firstAttribute="bottom" secondItem="DLw-aO-HjN" secondAttribute="bottom" constant="8.02" id="NfH-pL-jPU"/>
+                            <constraint firstItem="4Vw-ZN-zLW" firstAttribute="top" secondItem="u5M-4M-i0O" secondAttribute="top" id="TIs-z9-Tzk"/>
+                            <constraint firstAttribute="bottom" secondItem="4Vw-ZN-zLW" secondAttribute="bottom" constant="7.97" id="Hkd-EG-BA5"/>
+                            <constraint firstItem="4Vw-ZN-zLW" firstAttribute="leading" secondItem="8WJ-LR-YRL" secondAttribute="trailing" id="Exh-D0-ERb"/>
+                            <constraint firstItem="PG4-ZK-QLT" firstAttribute="leading" secondItem="4Vw-ZN-zLW" secondAttribute="trailing" id="7jQ-Te-h9V"/>
+                            <constraint firstAttribute="bottom" secondItem="8WJ-LR-YRL" secondAttribute="bottom" constant="7.95" id="9Mu-il-4N5"/>
+                            <constraint firstItem="DLw-aO-HjN" firstAttribute="top" secondItem="u5M-4M-i0O" secondAttribute="top" id="Ifi-QH-ZDf"/>
+                            <constraint firstItem="DLw-aO-HjN" firstAttribute="leading" secondItem="PG4-ZK-QLT" secondAttribute="trailing" id="7ly-7n-xCo"/>
+                            <constraint firstAttribute="height" constant="49.02" id="YRH-Fa-UqG"/>
+                            <constraint firstAttribute="bottom" secondItem="PG4-ZK-QLT" secondAttribute="bottom" constant="7.99" id="YhC-5z-XSy"/>
+                            <constraint firstAttribute="bottom" secondItem="Uca-VU-lbV" secondAttribute="bottom" id="mh4-au-MRU"/>
+                            <constraint firstItem="Uca-VU-lbV" firstAttribute="leading" secondItem="u5M-4M-i0O" secondAttribute="leading" id="Qpm-1q-zvG"/>
+                            <constraint firstItem="Uca-VU-lbV" firstAttribute="top" secondItem="u5M-4M-i0O" secondAttribute="top" id="8aq-z1-1XM"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createCollectionMain" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-WS-Epg">
+                        <rect key="frame" x="16" y="21" width="30" height="30"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u5M-4M-i0O" firstAttribute="centerX" secondItem="vx6-e9-PLI" secondAttribute="centerX" constant="-20" id="hB9-Wr-hlz"/>
+                    <constraint firstItem="Ajn-nr-STV" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="55.99" id="GUO-jW-GqX"/>
+                    <constraint firstItem="9mz-8x-nH3" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="31.98" id="0vQ-LG-Kbt"/>
+                    <constraint firstItem="9mz-8x-nH3" firstAttribute="trailing" secondItem="Ajn-nr-STV" secondAttribute="trailing" constant="-21" id="LFX-pd-bFs"/>
+                    <constraint firstItem="u5M-4M-i0O" firstAttribute="centerY" secondItem="vx6-e9-PLI" secondAttribute="centerY" id="1NH-Pi-7mp"/>
+                    <constraint firstAttribute="bottom" secondItem="9mz-8x-nH3" secondAttribute="bottom" constant="31.99" id="iGe-ZE-cdz"/>
+                    <constraint firstItem="bKk-WS-Epg" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="15.99" id="a46-vX-y43"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9mz-8x-nH3" secondAttribute="trailing" constant="57.01" id="ULo-lp-Qte"/>
+                    <constraint firstItem="gH2-QI-hGd" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="50.01" id="e9P-pF-fj1"/>
+                    <constraint firstItem="bKk-WS-Epg" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="21.03" id="eWV-oJ-Ojx"/>
+                    <constraint firstItem="gH2-QI-hGd" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="11.99" id="x88-3t-bae"/>
+                    <constraint firstItem="9mz-8x-nH3" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="76.99" id="rJU-hM-5zg"/>
+                    <constraint firstItem="Ajn-nr-STV" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="11.98" id="Gb7-A6-cov"/>
+                    <constraint firstAttribute="bottom" secondItem="Ajn-nr-STV" secondAttribute="bottom" constant="12.03" id="vjQ-UW-lcB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="cxg-w2-Btf"/>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="aidAlabel" destination="9mz-8x-nH3" id="Owo-fL-NS8"/>
+                <outlet property="gifImage" destination="gH2-QI-hGd" id="gBY-vc-32G"/>
+                <outlet property="itemsView" destination="u5M-4M-i0O" id="mDI-tK-ftD"/>
+            </connections>
+            <point key="canvasLocation" x="201.53846153846152" y="12.796208530805687"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sureAssitantbg" width="204" height="49"/>
+        <image name="shouRelationAudio" width="18" height="18"/>
+        <image name="ringFiveCollection" width="20" height="21"/>
+        <image name="photoManagerHeader" width="21" height="20"/>
+        <image name="ringPhone" width="20" height="19"/>
+        <image name="photoAvatar.gif" width="200" height="200"/>
+        <image name="createCollectionMain" width="30" height="30"/>
+    </resources>
+</document>

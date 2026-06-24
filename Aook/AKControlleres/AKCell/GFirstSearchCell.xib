@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wk9-O3-oLe" customClass="GFirstSearchCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="251"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nq9-e3-ViM">
+                        <rect key="frame" x="0.0" y="0.0" width="212" height="251"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Yms-lr-uSz"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nq9-e3-ViM" secondAttribute="bottom" id="d8E-cu-VH4"/>
+                <constraint firstItem="nq9-e3-ViM" firstAttribute="top" secondItem="Wk9-O3-oLe" secondAttribute="top" id="Zon-S5-cQF"/>
+                <constraint firstAttribute="trailing" secondItem="nq9-e3-ViM" secondAttribute="trailing" id="Sdb-iY-vqq"/>
+                <constraint firstItem="nq9-e3-ViM" firstAttribute="leading" secondItem="Wk9-O3-oLe" secondAttribute="leading" id="d3k-4Y-9UH"/>
+            </constraints>
+            <size key="customSize" width="212" height="251"/>
+            <connections>
+                <outlet property="Icon" destination="nq9-e3-ViM" id="12X-vM-N44"/>
+            </connections>
+            <point key="canvasLocation" x="255.38461538461539" y="59.360189573459714"/>
+        </collectionViewCell>
+    </objects>
+</document>

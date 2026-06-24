@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="IXM-ba-cBW" customClass="NICollectionRelationCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IXM-ba-cBW" id="vx6-e9-PLI">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="createCollectionMain" translatesAutoresizingMaskIntoConstraints="NO" id="0iX-Kl-m88">
+                        <rect key="frame" x="16" y="21" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27.99" id="pgv-Zd-Mmz"/>
+                            <constraint firstAttribute="width" constant="27.99" id="090-di-03q"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soo-4R-149">
+                        <rect key="frame" x="56" y="12" width="275" height="187"/>
+                        <subviews>
+                            <view alpha="0.11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-SP-8VU">
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="187"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的免费3条消息已用完，请解锁VIP无限聊天" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-WO-3ZU">
+                                <rect key="frame" x="19" y="19.999999999999996" width="236" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deO-zE-U1u">
+                                <rect key="frame" x="19" y="74" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chatDelegate_7x"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="IZv-52-9kg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-oq-3B5">
+                                <rect key="frame" x="19" y="128" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="beginRelationRecords"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="IXM-ba-cBW" eventType="touchUpInside" id="9ca-Hr-IFf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LeY-oq-3B5" secondAttribute="trailing" constant="19.01" id="zQm-C0-NLR"/>
+                            <constraint firstAttribute="bottom" secondItem="LeY-oq-3B5" secondAttribute="bottom" constant="17.01" id="RQs-fG-rEN"/>
+                            <constraint firstItem="UqK-SP-8VU" firstAttribute="leading" secondItem="Soo-4R-149" secondAttribute="leading" id="aNz-nI-sks"/>
+                            <constraint firstAttribute="trailing" secondItem="UqK-SP-8VU" secondAttribute="trailing" id="315-8A-HqR"/>
+                            <constraint firstItem="deO-zE-U1u" firstAttribute="leading" secondItem="Soo-4R-149" secondAttribute="leading" constant="18.95" id="48b-Xd-8Bx"/>
+                            <constraint firstAttribute="trailing" secondItem="deO-zE-U1u" secondAttribute="trailing" constant="18.99" id="KgB-hf-LQv"/>
+                            <constraint firstItem="UqK-SP-8VU" firstAttribute="top" secondItem="Soo-4R-149" secondAttribute="top" id="0Z5-yC-vvB"/>
+                            <constraint firstAttribute="height" constant="187.01" id="tbH-eU-Fas"/>
+                            <constraint firstAttribute="bottom" secondItem="UqK-SP-8VU" secondAttribute="bottom" id="FEv-LY-UiT"/>
+                            <constraint firstAttribute="trailing" secondItem="p6P-WO-3ZU" secondAttribute="trailing" constant="19.99" id="56x-GT-gnD"/>
+                            <constraint firstItem="p6P-WO-3ZU" firstAttribute="leading" secondItem="Soo-4R-149" secondAttribute="leading" constant="18.98" id="kku-89-9Fl"/>
+                            <constraint firstItem="p6P-WO-3ZU" firstAttribute="top" secondItem="Soo-4R-149" secondAttribute="top" constant="19.99" id="5mA-wH-1Zm"/>
+                            <constraint firstAttribute="bottom" secondItem="deO-zE-U1u" secondAttribute="bottom" constant="71.03" id="bpr-O2-1P9"/>
+                            <constraint firstItem="LeY-oq-3B5" firstAttribute="leading" secondItem="Soo-4R-149" secondAttribute="leading" constant="18.98" id="R7N-YV-eFj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Soo-4R-149" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="11.98" id="VK5-cJ-AwX"/>
+                    <constraint firstAttribute="bottom" secondItem="Soo-4R-149" secondAttribute="bottom" constant="11.99" id="fm4-fG-mKt"/>
+                    <constraint firstItem="Soo-4R-149" firstAttribute="leading" secondItem="0iX-Kl-m88" secondAttribute="trailing" constant="12.01" id="JCZ-h5-5BO"/>
+                    <constraint firstItem="0iX-Kl-m88" firstAttribute="leading" secondItem="vx6-e9-PLI" secondAttribute="leading" constant="15.99" id="w6K-aR-lSM"/>
+                    <constraint firstItem="0iX-Kl-m88" firstAttribute="top" secondItem="vx6-e9-PLI" secondAttribute="top" constant="21.01" id="vnz-Mx-V7u"/>
+                    <constraint firstAttribute="trailing" secondItem="Soo-4R-149" secondAttribute="trailing" constant="43.98" id="eVP-vQ-uL9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="cxg-w2-Btf"/>
+            <connections>
+                <outlet property="label" destination="p6P-WO-3ZU" id="bhz-N8-jqk"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beginRelationRecords" width="251" height="42"/>
+        <image name="chatDelegate_7x" width="251" height="42"/>
+        <image name="createCollectionMain" width="30" height="30"/>
+    </resources>
+</document>

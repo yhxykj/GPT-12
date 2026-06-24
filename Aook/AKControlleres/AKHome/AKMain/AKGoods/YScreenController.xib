@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="fi5-CE-f66" id="Ev5-gm-Mr5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fi5-CE-f66">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robotRegister_5zAssitantbg" translatesAutoresizingMaskIntoConstraints="NO" id="21R-IE-BSR">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70X-3t-kDD">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="numberSelect"/>
+                    <connections>
+                        <action selector="_nextClick" destination="CLi-aT-fNS" eventType="touchUpInside" id="Hxt-fT-ybB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-Ok-7v3">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55.03" id="kSb-NC-xf7"/>
+                        <constraint firstAttribute="height" constant="43.98" id="6Yf-EQ-uOI"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="loginUpload"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="CLi-aT-fNS" eventType="touchUpInside" id="KmG-Ej-Kng"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hd2-wA-kiO"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Udg-Ok-7v3" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" constant="10.01" id="P1N-qr-Svc"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="trailing" secondItem="70X-3t-kDD" secondAttribute="trailing" constant="46.01" id="vLW-Cy-ueh"/>
+                <constraint firstItem="Udg-Ok-7v3" firstAttribute="top" secondItem="hd2-wA-kiO" secondAttribute="top" id="1Uh-vM-0ey"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="trailing" secondItem="21R-IE-BSR" secondAttribute="trailing" id="Alf-y2-TGI"/>
+                <constraint firstAttribute="bottom" secondItem="21R-IE-BSR" secondAttribute="bottom" id="OeY-Vn-5J5"/>
+                <constraint firstItem="21R-IE-BSR" firstAttribute="top" secondItem="fi5-CE-f66" secondAttribute="top" id="mJn-b4-1kE"/>
+                <constraint firstItem="70X-3t-kDD" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" constant="46.01" id="Bi5-aw-sn1"/>
+                <constraint firstItem="21R-IE-BSR" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" id="ZE0-Xc-X0s"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="bottom" secondItem="70X-3t-kDD" secondAttribute="bottom" constant="19.99" id="39C-4x-yd5"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="robotRegister_5zAssitantbg" width="390" height="844"/>
+        <image name="numberSelect" width="298" height="54"/>
+        <image name="loginUpload" width="24" height="24"/>
+    </resources>
+</document>
