@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner" customClass="UNKRegisterController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="sV7-ix-mlo" id="6c2-Zo-9VE"/>
+                <outlet property="button" destination="I1X-EC-Bq4" id="yTC-A0-mJv"/>
+                <outlet property="itemView" destination="1oO-Cg-hLF" id="ncY-yO-C3p"/>
+                <outlet property="view" destination="fi5-CE-f66" id="Ev5-gm-Mr5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fi5-CE-f66">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomAssitantbgFfright" translatesAutoresizingMaskIntoConstraints="NO" id="dW8-Pe-oh4">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-Cg-hLF">
+                    <rect key="frame" x="0.0" y="461" width="393" height="391"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-pB-UxF">
+                            <rect key="frame" x="16" y="168" width="361" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="shareLoginbgModity"/>
+                            <connections>
+                                <action selector="_seekLogin:" destination="CLi-aT-fNS" eventType="touchUpInside" id="Miu-VW-ePY"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGK-81-hQP">
+                            <rect key="frame" x="16" y="248" width="361" height="54"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRZ-V9-bFR">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="relationBufferElevt"/>
+                                    <connections>
+                                        <action selector="_phoneClick:" destination="CLi-aT-fNS" eventType="touchUpInside" id="QLW-PC-0Qp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53.99" id="PkL-qS-0UZ"/>
+                                <constraint firstItem="sRZ-V9-bFR" firstAttribute="leading" secondItem="wGK-81-hQP" secondAttribute="leading" id="AJk-m5-nBM"/>
+                                <constraint firstItem="sRZ-V9-bFR" firstAttribute="top" secondItem="wGK-81-hQP" secondAttribute="top" id="SOJ-B3-EcV"/>
+                                <constraint firstAttribute="bottom" secondItem="sRZ-V9-bFR" secondAttribute="bottom" id="kkh-WE-2kf"/>
+                                <constraint firstAttribute="trailing" secondItem="sRZ-V9-bFR" secondAttribute="trailing" id="vGo-z0-WAp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wGK-81-hQP" secondAttribute="bottom" constant="89.02" id="6BC-HY-DJ0"/>
+                        <constraint firstItem="wGK-81-hQP" firstAttribute="top" secondItem="0E7-pB-UxF" secondAttribute="bottom" constant="25.99" id="qmk-5k-UAb"/>
+                        <constraint firstItem="wGK-81-hQP" firstAttribute="leading" secondItem="1oO-Cg-hLF" secondAttribute="leading" constant="15.96" id="ftR-55-db7"/>
+                        <constraint firstItem="0E7-pB-UxF" firstAttribute="leading" secondItem="1oO-Cg-hLF" secondAttribute="leading" constant="16.01" id="JS0-nh-Fwv"/>
+                        <constraint firstAttribute="height" constant="391.02" id="uFI-qj-40p"/>
+                        <constraint firstAttribute="trailing" secondItem="wGK-81-hQP" secondAttribute="trailing" constant="15.97" id="knD-2A-ljF"/>
+                        <constraint firstAttribute="trailing" secondItem="0E7-pB-UxF" secondAttribute="trailing" constant="15.98" id="p8t-uL-S7r"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sV7-ix-mlo">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomAssitantbgFfright" translatesAutoresizingMaskIntoConstraints="NO" id="I6J-dB-Ex1">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1X-EC-Bq4">
+                            <rect key="frame" x="16" y="655" width="361" height="52"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51.98" id="QHp-Vq-EtJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="playLoginlogo"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="26"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="_speedLogin:" destination="CLi-aT-fNS" eventType="touchUpInside" id="BZw-hn-yLx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="I1X-EC-Bq4" firstAttribute="leading" secondItem="sV7-ix-mlo" secondAttribute="leading" constant="16.02" id="UHp-ay-Szx"/>
+                        <constraint firstAttribute="bottom" secondItem="I1X-EC-Bq4" secondAttribute="bottom" constant="144.98" id="Ujt-lS-duU"/>
+                        <constraint firstAttribute="trailing" secondItem="I1X-EC-Bq4" secondAttribute="trailing" constant="15.99" id="1BF-PE-CSa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hd2-wA-kiO"/>
+            <constraints>
+                <constraint firstItem="sV7-ix-mlo" firstAttribute="top" secondItem="fi5-CE-f66" secondAttribute="top" id="Ux7-jb-TIW"/>
+                <constraint firstAttribute="bottom" secondItem="sV7-ix-mlo" secondAttribute="bottom" id="gjR-Ta-rgd"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="trailing" secondItem="dW8-Pe-oh4" secondAttribute="trailing" id="6MK-B3-FUT"/>
+                <constraint firstItem="1oO-Cg-hLF" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" id="FJ1-Hz-wUo"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="trailing" secondItem="sV7-ix-mlo" secondAttribute="trailing" id="yor-D2-Qua"/>
+                <constraint firstItem="dW8-Pe-oh4" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" id="5g3-f7-2px"/>
+                <constraint firstItem="sV7-ix-mlo" firstAttribute="leading" secondItem="hd2-wA-kiO" secondAttribute="leading" id="24e-b2-i3M"/>
+                <constraint firstAttribute="bottom" secondItem="1oO-Cg-hLF" secondAttribute="bottom" id="V6y-uG-k6C"/>
+                <constraint firstItem="sV7-ix-mlo" firstAttribute="leading" secondItem="fi5-CE-f66" secondAttribute="leading" id="W4k-a9-o7o"/>
+                <constraint firstAttribute="bottom" secondItem="dW8-Pe-oh4" secondAttribute="bottom" id="24T-oN-Rbq"/>
+                <constraint firstItem="sV7-ix-mlo" firstAttribute="top" secondItem="fi5-CE-f66" secondAttribute="top" id="W9v-9E-JG8"/>
+                <constraint firstItem="hd2-wA-kiO" firstAttribute="trailing" secondItem="1oO-Cg-hLF" secondAttribute="trailing" id="PCC-Eo-OEu"/>
+                <constraint firstItem="sV7-ix-mlo" firstAttribute="trailing" secondItem="hd2-wA-kiO" secondAttribute="trailing" id="E16-ss-a7P"/>
+                <constraint firstAttribute="bottom" secondItem="sV7-ix-mlo" secondAttribute="bottom" id="roc-Ft-8k4"/>
+                <constraint firstItem="dW8-Pe-oh4" firstAttribute="top" secondItem="fi5-CE-f66" secondAttribute="top" id="f1o-23-Wvw"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareLoginbgModity" width="296" height="54"/>
+        <image name="relationBufferElevt" width="296" height="54"/>
+        <image name="playLoginlogo" width="358" height="54"/>
+        <image name="bottomAssitantbgFfright" width="390" height="844"/>
+    </resources>
+</document>

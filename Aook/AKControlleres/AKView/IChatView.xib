@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="CLi-aT-fNS" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bns-ff-enk" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aNB-fE-X1o" customClass="IChatView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="543"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centerFree" translatesAutoresizingMaskIntoConstraints="NO" id="s5r-2p-N6N">
+                    <rect key="frame" x="128.66666666666666" y="126" width="132.99999999999997" height="162"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="s5r-2p-N6N" firstAttribute="top" secondItem="aNB-fE-X1o" secondAttribute="top" constant="126.02" id="VFz-ge-dT8"/>
+                <constraint firstItem="s5r-2p-N6N" firstAttribute="centerX" secondItem="aNB-fE-X1o" secondAttribute="centerX" id="6p1-RU-Bd0"/>
+            </constraints>
+            <point key="canvasLocation" x="68.702290076335871" y="75.704225352112687"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="centerFree" width="133" height="162"/>
+    </resources>
+</document>
