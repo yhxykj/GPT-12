@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JW6-Fk-wAK">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tNT-DC-he3">
+            <objects>
+                <viewController id="JW6-Fk-wAK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K1t-j4-Sk4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="commonAlifastDetails" translatesAutoresizingMaskIntoConstraints="NO" id="tHu-HM-6Si">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="93Z-vg-r5z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tHu-HM-6Si" firstAttribute="top" secondItem="K1t-j4-Sk4" secondAttribute="top" id="TF4-Hr-pai"/>
+                            <constraint firstAttribute="bottom" secondItem="tHu-HM-6Si" secondAttribute="bottom" id="fqd-7y-kz2"/>
+                            <constraint firstAttribute="trailing" secondItem="tHu-HM-6Si" secondAttribute="trailing" id="AjB-Fi-myb"/>
+                            <constraint firstItem="tHu-HM-6Si" firstAttribute="leading" secondItem="K1t-j4-Sk4" secondAttribute="leading" id="ORY-pv-AK7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ElE-OJ-jfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="commonAlifastDetails" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
